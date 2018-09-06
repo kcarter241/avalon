@@ -90,7 +90,7 @@ gem 'whenever', git: "https://github.com/javan/whenever.git", require: false
 gem 'with_locking'
 
 gem 'debugger-ruby_core_source'
-gem 'passenger'
+gem 'passenger', '5.3.4'
 
 group :development do
   gem 'capistrano', '~>3.6'
