@@ -89,6 +89,9 @@ gem 'parallel'
 gem 'whenever', git: "https://github.com/javan/whenever.git", require: false
 gem 'with_locking'
 
+gem 'debugger-ruby_core_source'
+gem 'passenger'
+
 group :development do
   gem 'capistrano', '~>3.6'
   gem 'capistrano-rails', require: false
@@ -156,6 +159,7 @@ end
 
 # Install the bundle --with mysql if using mysql as the database backend
 group :mysql, optional: true do
+  gem 'activerecord-mysql2-adapter'
   gem 'mysql2'
 end
 
